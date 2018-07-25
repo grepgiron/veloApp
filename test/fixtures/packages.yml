@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tracking: MyString
+  arrived_date: 2018-07-24
+  departed_date: 2018-07-24
+  carrier: one
+  client: one
+  located: one
+
+two:
+  tracking: MyString
+  arrived_date: 2018-07-24
+  departed_date: 2018-07-24
+  carrier: two
+  client: two
+  located: two

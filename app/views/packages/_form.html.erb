@@ -1,0 +1,21 @@
+<%= form_for(@package) do |f| %>
+     <%= f.label :Numero %><br>
+     <%= f.text_field :tracking, :class => 'form-control'%><br>
+     <%= f.label :Salida %><br>
+     <%= f.date_select :departed_date, :class => 'datepicker' %><br>
+     <%= f.label :Llegada %><br>
+     <%= f.date_select :arrived_date, :class => 'custom-select' %><br>
+     <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Carrier</label>
+        </div>
+        <%= f.collection_select :carrier_id, Carrier.all, :id, :name,  {:prompt=>true}, {:class=>'custom-select'} %><br>
+     </div>
+     <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Localizado</label>
+        </div>
+        <%= f.collection_select :located_id, Located.all, :id, :address,  {:prompt=>true}, {:class=>'custom-select'} %><br>
+     </div>
+     <%= f.submit 'Save', :class=> 'btn btn-primary'  %>
+<% end %>

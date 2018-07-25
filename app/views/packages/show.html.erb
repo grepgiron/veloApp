@@ -1,0 +1,7 @@
+<div class="chartjs-size-monitor">
+    <h1><%= @package.trackign %></h1>
+    <p><%= @package.client.name %></p>
+    <p><%= @package.departed_date %></p>
+    <%= link_to 'Edit', edit_package_path(@client) %>
+    <%= link_to 'Delete', @package, method: :delete%>
+</div>

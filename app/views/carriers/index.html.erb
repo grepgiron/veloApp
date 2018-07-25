@@ -1,0 +1,6 @@
+<div class="chartjs-size-monitor">
+    <% @carriers.each do |carrier| %>
+        <h1><%= link_to carrier.name, carrier %></h1>
+        <a><%= link_to 'Tracking' ,carrier.url, :target => '_blank'%><br>
+    <% end %><br>
+</div>

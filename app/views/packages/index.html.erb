@@ -1,0 +1,6 @@
+<div class="container">
+    <% @packages.each do |package| %>
+        <h1><%= link_to package.tracking, package %></h1>
+        <p><%= package.client.name %></p>
+    <% end %>
+</div>

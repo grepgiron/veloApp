@@ -1,0 +1,7 @@
+<div class="chartjs-size-monitor">
+    <h1><%= @client.name %></h1>
+    <p><%= @client.phone %></p>
+    <p><%= @client.address %></p>
+    <%= link_to 'Edit', edit_client_path(@client) %>
+    <%= link_to 'Delete', @client, method: :delete%>
+</div>
