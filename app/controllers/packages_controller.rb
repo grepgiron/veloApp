@@ -1,9 +1,6 @@
 class PackagesController < ApplicationController
     def new
         @package = Package.new
-        @carriers = Carrier.all
-        @locateds = Located.all
-        @client = Client.all
     end
 
     def create

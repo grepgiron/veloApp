@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2018_07_24_213432) do
 
   create_table "packages", force: :cascade do |t|
     t.string "tracking"
-    t.date "arrived_date"
-    t.date "departed_date"
+    t.string "arrived_date"
+    t.string "departed_date"
     t.integer "carrier_id"
     t.integer "client_id"
     t.integer "located_id"

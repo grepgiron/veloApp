@@ -1,6 +1,17 @@
 <div class="container">
+    <table class="table table-sm">
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Telfono</th>
+            <th scope="col">Direccion</th>
+            <th colspan="2"></th>
+        </tr>
     <% @clients.each do |client| %>
-        <h1><%= link_to client.name, client %></h1>
-        <p><%= client.address %></p>
+        <tr>
+            <td scope="row"><%= client.name%></td>
+            <td><%= client.phone%></td>
+            <td><%= client.address%></td>
+            <td><%= link_to 'Mostrar', client_path(client)%></td>
+            <td><%= link_to 'Edit', edit_client_path(client) %></td>
     <% end %>
 </div>
